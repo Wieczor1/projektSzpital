@@ -1,0 +1,9 @@
+.btns:hover {
+    -fx-background-color: #375a44;
+}
+
+.border {
+    -fx-background-color: #375a44;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color:  #375a44;
+}

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" prefHeight="800.0" prefWidth="1200.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.OddzialyController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="800.0" prefWidth="1200.0">
+            <children>
+                <ImageView fitHeight="800.0" fitWidth="1200.0">
+                    <image>
+                        <Image url="@img/2.jpg" />
+                    </image>
+                </ImageView>
+            <VBox layoutY="-2.0" prefHeight="800.0" prefWidth="235.0" style="-fx-background-color: #485c57;">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="235.0">
+                     <children>
+                        <Label prefHeight="100.0" prefWidth="235.0" textFill="WHITE">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="10.0" layoutY="88.0" onMouseClicked="#changeSceneToPacjenciPielegniarka" prefHeight="38.0" prefWidth="235.0" styleClass="btns" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@img/patient.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="79.0" prefWidth="139.0" text="Pacjenci" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="368.0" onMouseClicked="#changeSceneToSalePielegniarka" prefHeight="38.0" prefWidth="235.0" styleClass="btns" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@img/hospital-bed.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="79.0" prefWidth="139.0" text="Sale" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="438.0" onMouseClicked="#changeSceneToOddzialyPielegniarka" prefHeight="38.0" prefWidth="235.0" styleClass="btns" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@img/hospital.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="79.0" prefWidth="139.0" text="Oddziały" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="235.0" prefHeight="800.0" prefWidth="963.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #485c57;">
+                     <children>
+                        <HBox fx:id="dodaj" disable="true" prefHeight="100.0" prefWidth="186.0" stylesheets="@style.css" visible="false">
+                           <children>
+                              <Label onMouseClicked="#dodajPopup" prefHeight="151.0" prefWidth="241.0" styleClass="btns" stylesheets="@style.css" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children></HBox>
+                        <HBox fx:id="usun" disable="true" layoutX="10.0" layoutY="10.0" onMouseClicked="#usunPopup" prefHeight="100.0" prefWidth="186.0" stylesheets="@style.css" visible="false">
+                           <children>
+                              <Label prefHeight="151.0" prefWidth="241.0" styleClass="btns" stylesheets="@style.css" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="modyfikuj" disable="true" layoutX="196.0" layoutY="10.0" prefHeight="100.0" prefWidth="186.0" stylesheets="@style.css" visible="false">
+                           <children>
+                              <Label onMouseClicked="#modyfikujPopup" prefHeight="151.0" prefWidth="241.0" styleClass="btns" stylesheets="@style.css" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="oddzialyTable" prefHeight="598.0" prefWidth="963.0">
+                    <columns>
+                        <TableColumn fx:id="nazwa" prefWidth="119.0" text="Nazwa" />
+                        <TableColumn fx:id="ordynator" prefWidth="214.0" text="Ordynator" />
+                        <TableColumn fx:id="nrTelefonu" prefWidth="153.0" text="Nr telefonu" />
+                    </columns>
+                  </TableView>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #485c57;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="186.0" stylesheets="@style.css" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
+                        <HBox layoutX="210.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
+                        <HBox layoutX="410.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
+                        <HBox layoutX="610.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

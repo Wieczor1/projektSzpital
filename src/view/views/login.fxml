@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" prefHeight="626.0" prefWidth="626.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="626.0" prefWidth="626.0">
+         <children>
+            <ImageView fitHeight="626.0" fitWidth="626.0">
+               <image>
+                  <Image url="@img/projekt-szpital-pokoj-tlo_1300-383.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-1.0" layoutY="167.0" prefHeight="305.0" prefWidth="626.0" style="-fx-background-color: #97bab3; -fx-opacity: 0.4;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="626.0" prefWidth="626.0" style="">
+         <children>
+            <Button fx:id="LoginButton" layoutX="216.0" layoutY="417.0" mnemonicParsing="false" onAction="#checkUzytkownik" prefHeight="37.0" prefWidth="194.0" style="-fx-background-color: #485c57; -fx-background-radius: 90;" text="Loguj" textFill="WHITE" />
+            <PasswordField fx:id="password" layoutX="216.0" layoutY="336.0" promptText="Hasło" />
+            <TextField fx:id="userName" layoutX="216.0" layoutY="287.0" promptText="Nazwa użytkownika" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
